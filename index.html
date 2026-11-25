@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Kriti</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;min-height:100svh;display:grid;place-items:center;background:radial-gradient(ellipse at center,#310e22,#100810 72%);color:white;font-family:Arial,sans-serif}.scene{width:min(90vw,520px);text-align:center}.heart{width:100%;overflow:visible;animation:beat 1.35s 5s infinite;transform-origin:50% 50%}.shape{fill:#e91e46;fill-opacity:0;stroke:#ff7799;stroke-width:2;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.7s ease forwards,fill 1s 2.4s forwards;filter:drop-shadow(0 0 12px #ff346b88)}text{fill:white;text-anchor:middle;font-weight:bold;letter-spacing:3px}.name{font-size:22px;letter-spacing:7px;opacity:0;animation:appear 1s 4.2s forwards}.note{font-size:14px;color:#ffc4d5;letter-spacing:2px;opacity:0;animation:appear 1s 5s forwards}@keyframes draw{to{stroke-dashoffset:0}}@keyframes fill{to{fill-opacity:1}}@keyframes appear{to{opacity:1}}@keyframes beat{0%,40%,100%{transform:scale(1)}12%{transform:scale(1.07)}25%{transform:scale(1.035)}}@media(prefers-reduced-motion:reduce){.heart,.shape,.name,.note{animation:none}.shape{fill-opacity:1;stroke-dashoffset:0}.name,.note{opacity:1}}
+</style>
+</head>
+<body><main class="scene"><svg class="heart" viewBox="0 0 400 350" role="img" aria-label="Love you Kriti"><path class="shape" pathLength="1" d="M200 306 C165 278 35 194 35 112 C35 26 137 12 200 91 C263 12 365 26 365 112 C365 194 235 278 200 306Z"/><text id="message" x="200" y="151" font-size="32"></text><text class="name" x="200" y="191">KRITI</text></svg><p class="note">Some people write love letters. I write code.</p></main><script>const message=document.getElementById('message');const words='LOVE YOU';if(matchMedia('(prefers-reduced-motion: reduce)').matches){message.textContent=words}else{setTimeout(()=>{let i=0;const timer=setInterval(()=>{message.textContent=words.slice(0,++i);if(i===words.length)clearInterval(timer)},120)},3000)}</script></body></html>
